@@ -60,23 +60,22 @@
         
         <div class="bloc_recherche">
 
-            <div class="marker_localisation">
                 <div class="marker">
-                    <i class="fas fa-map-marker-alt"></i>
+                    <i class="fas fa-map-marker-alt fa-xs"></i>
                 </div>
                 
-            </div>
-            
-            <div id="search_localisation">
-                <form method="post" action="traitement.php">        <!-- nom action "traitement.php" est fictif A MODIFIER -->
-                    <input type="search" placeholder="Quelle destination?" title="rechercher">
-                </form>
-            </div> 
-            
-            <div class="search_button">
-            <a href="#" class="bouton">Rechercher</a>
-            </div>
+                <div class="recherche">
+                
+                    <form method="post" action="traitement.php">        
+                        <div class="destination">
+                        <input type="search" placeholder="Quelle destination?" title="rechercher"
+                        ><input type="submit" value="Rechercher">
+                        </div>
+                    </form>
+                </div> 
         </div>
+
+        
 <br />
         <!-- Icônes -->        
         <i class="fas fa-dog"></i>
@@ -112,7 +111,6 @@
         </span>
         </h6>
         <h6>Plus de xx logements sont disponibles dans cette ville.</h6>
-
 
 <!-- Section 2 Partie Résultats Logements -->
 <section>

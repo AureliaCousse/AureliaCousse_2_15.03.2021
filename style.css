@@ -1,9 +1,8 @@
- /* Définition de la police utilisée sur ce site */
+/* Définition de la police utilisée sur ce site */
 @font-face{                                                    
     font-family: "Raleway-Regular";
     src: url("polices/Raleway-Regular.ttf") format("truetype"); /* police fournie en .ttf only */
 }
-
 
 /* Ci-dessous les caractéristiques communes à toute la page web */ 
 #bloc_page{
@@ -63,28 +62,52 @@ nav a:hover{
     background-color: #FFFFFF;
     font-weight: bold;
 }
-/* fERMETURENavigation Menu - CLOSED ON 11/04/2021 */
-
+/* Navigation Menu - CLOSED ON 11/04/2021 */
 
 /* Bloc Recherche */ 
 
 .bloc_recherche{
     display: flex;
-    
+    align-items:center;
 }
 
 
-.search_button{
+.marker{
     display: flex;
+    background-color:#f2f2f2;
+    justify-content: center; 
+    align-items: center;
+    width: 36.3px;
+    height: 34.7px; 
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+.destination input[type="submit"] {
     color:white;
     background-color: #0065FC;
-    width: 85px;
-    height: 22px;
-    font-size: 0.5em;
-    justify-content: center;
-    align-items:center;
+    width: 94.75px;
+    height: 34.7px;
+    font-size: 0.8em;
+    border-style: none;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
     
 }
+
+.destination input[type="search"] {
+    background-color:none;
+    width: 168.95px;
+    height: 34.7px;
+    font-size: 0.8em;
+    font-weight: bold;
+    border-style: solid;
+    border-top-color: #F2F2F2;
+    border-bottom-color: #F2F2F2;
+    border-right: none;
+    border-left: none;
+    border-width: 0.7px;
+}
+
 
 
 
@@ -105,7 +128,6 @@ nav a:hover{
     padding-bottom: 15px;
 }
 /* FIN Filtres */ /* A REVOIR */
-
 
 /* Icons Filtres */
 .fa-circle{
@@ -130,7 +152,6 @@ nav a:hover{
     color: black
 }
 
-
 /* Bloc Résulats */
 .Résultats{
     display: flex;
@@ -154,7 +175,6 @@ nav a:hover{
     width: 100%;
 }
 /* Fermeture Bloc Activités */
-
 
 /* Footer - CLOSED ON 11/04/2021 */
 
@@ -189,8 +209,5 @@ a{
     color: red;           /* A SUPPRIMER */
     font-size: 20px;        /* A SUPPRIMER */
 }
-
-
-
 
 
