@@ -1,11 +1,193 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-         <link rel="stylesheet" href="style.css" />
-        <title>Titre</title>
-    </head>
-    <body>
-    
-    </body>
-</html>
+<!DOCTYPE html>                                         <!--ceci est un document de type HTML5-->
+<html>                                                  <!-- html -->
+  <head>                                                <!-- head -->
+    <meta charset="UTF-8">                              <!-- pour conserver l'encodage et les accents -->
+    <link rel="stylesheet" href="style.css" />          <!-- pour faire le lien avec la page css -->
+    <script src="https://kit.fontawesome.com/32e4f6682e.js" crossorigin="anonymous"></script> <!-- ce sont les kits icons Fontawesome -->
+    <title>Reservia</title>                             <!-- le titre de la page (dans Google, dans les onglets…) -->
+
+    <meta name="description" content="Site de réservation d'hébergements et activités pour des vacances de rêve partout en France" />
+    
+    
+    <meta name="twitter:card" value="summary"/>          <!-- Twitter Card data -->
+    <meta name=”twitter:site” content="http://www.reservia.com/" />
+    <meta name=”twitter:title” content=”Reservia” />
+    <meta name=”twitter:description” content="Site de réservation d'hebergements et activités pour des vacances de rêve partout en France."  />
+    <meta name=”twitter:image” content="C:\Users\acousse\Documents\EAGLE\Projet_2\1_Documents_de_travail\Fichiers\images\Reservia.svg" />
+    
+    <meta property="og:title" content="Reservia" />     <!-- Open Graph data -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.reservia.com/" />
+    <meta property="og:image" content="C:\Users\acousse\Documents\EAGLE\Projet_2\1_Documents_de_travail\Fichiers\images\Reservia.svg" />
+    <meta property="og:description" content="Site de réservation d'hébergements et activités pour des vacances de rêve partout en France" />
+
+  </head>                                               <!-- fin du head-->
+  
+    <body>                                              <!-- body: la partie visible du site) -->
+
+    <div id="bloc_page">                                <!-- Ceci est un Bloc page/Main wrapper-->
+        
+            <section>                                  <!-- A SUPPRIMER -->
+            <div class="courage">                      <!-- A SUPPRIMER -->                  
+           <p>Courage Aurélia! Tu vas y arriver!</p>   <!-- A SUPPRIMER -->
+           <p>DON'T GIVE UP & CHEER UP!</p>            <!-- A SUPPRIMER -->
+           </div>                                      <!-- A SUPPRIMER -->
+           </section>                                  <!-- A SUPPRIMER -->
+
+<!-- Header - CLOSED ON 11/04/2021-->          
+    <header>                                            
+
+        <div class="logo">                                 <!-- Le Logo -->                                 
+            <img src="images\Reservia.svg"> 
+        </div>                         
+                                      
+        <nav>                                              <!-- Menu Liens de Navigation -->
+            <ul>
+                <li><a href="#">Hébergements</a></li>
+                <li ><a href="#"  style="color:black">Activités</a></li>
+                <li><a href="#">S'inscrire</a></li>
+            </ul>
+        </nav>
+
+    </header>                                           
+<!-- Fermeture du Header -->
+
+    <section>
+
+    <!-- Section 1 Partie Recherche -->
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <h6>En plein centre ville ou en pleine nature</h6>
+        
+        <div class="bloc_recherche">
+
+            <div class="marker_localisation">
+                <div class="marker">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                
+            </div>
+            
+            <div id="search_localisation">
+                <form method="post" action="traitement.php">        <!-- nom action "traitement.php" est fictif A MODIFIER -->
+                    <input type="search" placeholder="Quelle destination?" title="rechercher">
+                </form>
+            </div> 
+            
+            <div class="search_button">
+            <a href="#" class="bouton">Rechercher</a>
+            </div>
+        </div>
+<br />
+        <!-- Icônes -->        
+        <i class="fas fa-dog"></i>
+        <i class="fas fa-child"></i>
+        <i class="fas fa-money-bill-wave"></i>
+        <i class="fas fa-heart"></i>
+        <i class="fas fa-chart-line"></i>
+        <i class="fas fa-star"></i>
+
+        
+
+        <!-- Boutons Filtres -->
+
+            <div id=filtres>
+                <h4>Filtres</h4>
+            </div>
+            <div class="liste_filtres">
+                <form method="post" action="traitement.php"> <!-- nom action "traitement.php" est fictif A MODIFIER -->
+                <ul>
+                    <li><input type="checkbox" name="Economique"/> <label for="Economique">Economique</label></li><br />
+                    <li><input type="checkbox" name="Familial"/> <label for="Familial">Familial</label></li><br />
+                    <li><input type="checkbox" name="Romantique"/> <label for="Romantique">Romantique</label></li><br />
+                    <li><input type="checkbox" name="Animaux autorisés"/> <label for="Animaux autorisés">Animaux autorisés</label></li><br />
+                <ul>
+                </form>
+            </div>
+
+        <!-- Info Disponibilités -->
+        <h6 id="disponibilités">
+        <span class="fa-info">
+        <i class="fas fa-circle"></i>
+        <i class="fas fa-info"></i>
+        </span>
+        </h6>
+        <h6>Plus de xx logements sont disponibles dans cette ville.</h6>
+
+
+<!-- Section 2 Partie Résultats Logements -->
+<section>
+    <div class="Résultats">
+        <div class="Hébergements">                            <!-- Liste des Hébergements -->
+            <h1>Hébergement à</h1>
+                
+            <h3>Afficher plus</h3>
+        </div>
+        
+        <aside class="Populaires">                                  <!-- Sélection des plus populaires -->
+            <h1>Les plus populaires</h1>
+            <img src="images\Reservia.svg">
+        </aside> 
+
+    </div>
+</section>
+<!-- Fermeture Section 2 Partie Résultats Logements -->
+
+<!-- Section 3 Partie Activités -->
+<section>
+<div class="Activités">                                     
+    <h1>Activités à</h1>
+</div>
+</section>
+<!-- Fermeture Section 3 Partie Activités -->
+
+<footer>                                                <!-- Footer -->
+    <div class="footer_site_reservia">                     <!-- Bloc Div Footer -->
+    <div class="A_propos">                                 <!-- Footer Part1: A propos -->
+            <ul><strong>A propos</strong> 
+
+                <li>
+                <a href="contenu/fonctionnement.html">Fonctionnement du site</a> 
+                </li>
+                
+                <li>
+                    <a href="contenu/cgv.html">Conditions générales de vente</a> 
+                </li>
+                <li>
+                    <a href="contenu/donnees_confidentialite.html">Données et confidentialité</a> 
+                </li>
+
+            </ul>
+        </div>                                              <!-- Fermeture Footer Part1: A propos -->
+
+    <div class="Nos_hébergements">                        <!-- Footer Part2: Nos hébergements -->
+        <ul><strong>Nos hébergements</strong> 
+            <li>
+            <a href="contenu/charte_qualité.html">Charte Qualité</a> 
+            </li>
+            
+            <li>
+                <a href="contenu/soumettre.html">Soumettre votre hôtel</a> 
+            </li>
+        </ul>            
+    </div>                                              <!-- Fermeture Footer Part2: Nos hébergements --> 
+    
+    <div class="Assistance">                               <!-- Footer Part3: Assistance -->
+        <ul><strong>Assistance</strong> 
+            <li>
+            <a href="contenu/aide.html">Centre d'aide</a> 
+            </li>
+            
+            <li>
+                <a href="contenu/nous_contacter.html">Nous contacter</a> 
+            </li>
+        </ul>   
+    </div>                                              <!-- Fermeture Footer Part3: Assistance -->
+</div>                                                  <!-- Fermeture Bloc Div Footer -->
+</footer>                                               <!-- Fermeture Footer -->
+
+        </section>
+    </div>                          <!-- fermeture Bloc page/Main wrapper-->
+  </body>                           <!-- fermeture body-->
+</html>                             <!-- fermeture html -->
+
+
