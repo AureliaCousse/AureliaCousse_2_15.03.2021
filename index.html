@@ -34,7 +34,7 @@
            </div>                                      <!-- A SUPPRIMER -->
            </section>                                  <!-- A SUPPRIMER -->
 
-<!-- Header - CLOSED ON 11/04/2021-->          
+<!-- Header - CLOSED ON 10/04/2021-->          
     <header>                                            
 
         <div class="logo">                                 <!-- Le Logo -->                                 
@@ -42,7 +42,7 @@
         </div>                         
                                       
         <nav>                                              <!-- Menu Liens de Navigation -->
-            <ul>
+            <ul class="menu">
                 <li><a href="#">Hébergements</a></li>
                 <li ><a href="#"  style="color:black">Activités</a></li>
                 <li><a href="#">S'inscrire</a></li>
@@ -50,11 +50,13 @@
         </nav>
 
     </header>                                           
-<!-- Fermeture du Header -->
+<!-- Fermeture du Header - CLOSED ON 10/04/2021 -->
 
     <section>
 
     <!-- Section 1 Partie Recherche -->
+
+    <!-- Section 1.1 Barre de Recherche - CLOSED ON 11/04/2021-->
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <h6>En plein centre ville ou en pleine nature</h6>
         
@@ -73,59 +75,96 @@
                         </div>
                     </form>
                 </div> 
-        </div>
+        </div> <br />
 
-        
-<br />
-        <!-- Icônes -->        
-        <i class="fas fa-dog"></i>
-        <i class="fas fa-child"></i>
-        <i class="fas fa-money-bill-wave"></i>
-        <i class="fas fa-heart"></i>
-        <i class="fas fa-chart-line"></i>
-        <i class="fas fa-star"></i>
-
+        <!-- Fermeture Section 1.1 Barre de Recherche - CLOSED ON 11/04/2021-->
         
 
-        <!-- Boutons Filtres -->
-
-            <div id=filtres>
-                <h4>Filtres</h4>
-            </div>
+        <!-- Section 1.2 Boutons Filtres - CLOSED ON 12/04/2021-->                 
             <div class="liste_filtres">
                 <form method="post" action="traitement.php"> <!-- nom action "traitement.php" est fictif A MODIFIER -->
-                <ul>
-                    <li><input type="checkbox" name="Economique"/> <label for="Economique">Economique</label></li><br />
-                    <li><input type="checkbox" name="Familial"/> <label for="Familial">Familial</label></li><br />
-                    <li><input type="checkbox" name="Romantique"/> <label for="Romantique">Romantique</label></li><br />
-                    <li><input type="checkbox" name="Animaux autorisés"/> <label for="Animaux autorisés">Animaux autorisés</label></li><br />
+                <ul class="choix">
+
+                    <li class="filtre_select">
+                        <h4>Filtres</h4>
+                    </li>
+
+                    <li>
+                        <div class="filtre">
+                            <div class="bouton eco">
+                                <input type="checkbox" name="filtre" id="checkeco"/>
+                                <label for="checkeco"><i class="fas fa-money-bill-wave fa-xs"></i></label>
+                            </div>
+                            <div class="label">
+                                Economique
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="filtre">
+                            <div class="bouton familial">
+                                <input type="checkbox" name="filtre" id="checkfamilial"/>
+                                <label for="checkfamilial"><i class="fas fa-child fa-xs"></i></label>
+                            </div>
+                            <div class="label">
+                                Familial
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="filtre">
+                            <div class="bouton">
+                                <input type="checkbox" name="filtre" id="checkromantique"/>
+                                <label for="checkromantique"><i class="fas fa-heart fa-xs"></i></label>
+                            </div>
+                            <div class="label">
+                                Romantique
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="filtre">
+                            <div class="bouton">
+                                <input type="checkbox" name="filtre" id="checkanimaux"/>
+                                <label for="checkanimaux"><i class="fas fa-dog fa-xs"></i></label>
+                            </div>
+                            <div class="label">
+                                Animaux autorisés
+                            </div>
+                        </div>
+                    </li>
                 <ul>
                 </form>
-            </div>
+            </div> 
+<!-- Fermeture Section 1.2 Boutons Filtres - CLOSED ON 12/04/2021-->
+        
 
-        <!-- Info Disponibilités -->
-        <h6 id="disponibilités">
-        <span class="fa-info">
-        <i class="fas fa-circle"></i>
-        <i class="fas fa-info"></i>
-        </span>
-        </h6>
-        <h6>Plus de xx logements sont disponibles dans cette ville.</h6>
+<!-- Section 1.3 Info Disponibilités - CLOSED ON 12/04/2021-->
+    <div class="info_dispo">
+        <h6><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville.</h6>
+    </div>
+
+<!-- Fermeture Section 1.3 Info Disponibilités - CLOSED ON 12/04/2021-->
 
 <!-- Section 2 Partie Résultats Logements -->
 <section>
     <div class="Résultats">
-        <div class="Hébergements">                            <!-- Liste des Hébergements -->
+        <div class="Hébergements">                          <!-- Liste des Hébergements -->
             <h1>Hébergement à</h1>
                 
             <h3>Afficher plus</h3>
         </div>
         
-        <aside class="Populaires">                                  <!-- Sélection des plus populaires -->
+        <aside class="Populaires">                          <!-- Sélection des plus populaires -->
             <h1>Les plus populaires</h1>
-            <img src="images\Reservia.svg">
+            <i class="fas fa-chart-line"></i>
         </aside> 
 
+        <i class="fas fa-star"></i>
+        
     </div>
 </section>
 <!-- Fermeture Section 2 Partie Résultats Logements -->
@@ -138,7 +177,9 @@
 </section>
 <!-- Fermeture Section 3 Partie Activités -->
 
-<footer>                                                <!-- Footer -->
+
+ <!-- Footer - CLOSED ON 10/04/2021-->
+<footer>                                               
     <div class="footer_site_reservia">                     <!-- Bloc Div Footer -->
     <div class="A_propos">                                 <!-- Footer Part1: A propos -->
             <ul><strong>A propos</strong> 
@@ -155,9 +196,9 @@
                 </li>
 
             </ul>
-        </div>                                              <!-- Fermeture Footer Part1: A propos -->
+        </div>                                          <!-- Fermeture Footer Part1: A propos -->
 
-    <div class="Nos_hébergements">                        <!-- Footer Part2: Nos hébergements -->
+    <div class="Nos_hébergements">                      <!-- Footer Part2: Nos hébergements -->
         <ul><strong>Nos hébergements</strong> 
             <li>
             <a href="contenu/charte_qualité.html">Charte Qualité</a> 
@@ -169,7 +210,7 @@
         </ul>            
     </div>                                              <!-- Fermeture Footer Part2: Nos hébergements --> 
     
-    <div class="Assistance">                               <!-- Footer Part3: Assistance -->
+    <div class="Assistance">                            <!-- Footer Part3: Assistance -->
         <ul><strong>Assistance</strong> 
             <li>
             <a href="contenu/aide.html">Centre d'aide</a> 
@@ -181,7 +222,8 @@
         </ul>   
     </div>                                              <!-- Fermeture Footer Part3: Assistance -->
 </div>                                                  <!-- Fermeture Bloc Div Footer -->
-</footer>                                               <!-- Fermeture Footer -->
+</footer>                                               
+<!-- Fermeture Footer - CLOSED ON 10/04/2021-->
 
         </section>
     </div>                          <!-- fermeture Bloc page/Main wrapper-->
