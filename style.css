@@ -1,16 +1,17 @@
-/* Définition de la police utilisée sur ce site */
+/* Définition des polices utilisées sur ce site */
 @font-face{                                                    
-    font-family: "Raleway-Regular";
-    src: url("polices/Raleway-Regular.ttf") format("truetype"); /* police fournie en .ttf only */
+    font-family: "Raleway-Regular"; 
+    src: url("polices/Raleway-Regular.ttf") format("truetype");
+    font-family: "Raleway-ExtraBold";
+    src: url("polices/Raleway-ExtraBold.ttf") format("truetype");
+    font-family: "Raleway-ExtraBoldItalic";
+    src: url("polices/Raleway-ExtraBoldItalic.ttf") format("truetype");                                                                 /* police fournie en .ttf only */
 }
-
 
 /* Ci-dessous les caractéristiques communes à toute la page web */ 
 #bloc_page{
     font-family: "Raleway-Regular", Arial, Verdana, sans-serif; /* utilisation des polices sur la totalité de la page */
 }
-
-
 /* Fermeture des caractéristiques communes à toute la page web */ 
 
 /* Header */
@@ -63,7 +64,12 @@ nav a:hover{
 }
 /* Navigation Menu - CLOSED ON 10/04/2021 */
 
-/* Bloc Recherche - CLOSED ON 11/04/2021*/ 
+/* Bloc Recherche - CLOSED ON 11/04/2021 modif 13/04/21*/ 
+
+.titre{
+    margin-bottom: -20px;
+}
+    
 .bloc_recherche{
     display: flex;
     align-items:center;
@@ -104,8 +110,6 @@ nav a:hover{
     border-width: 0.7px;
 }
 /* Fermeture Bloc Recherche - CLOSED ON 11/04/2021*/
-
-
 
 /* Bloc Filtres - CLOSED ON 12/04/2021*/ 
 
@@ -197,38 +201,101 @@ margin-right: 10px;;
 
 /* Fermeture Bloc Info Disponibilités - CLOSED ON 12/04/2021 */
 
-/* Bloc Résulats */
-.Résultats{
-    display: flex;
-}
-/* Bloc Hébergements à */
-.Hébergements{
-    background-color:turquoise;
-    width: 66%;
-}
-/* Fermeture Bloc Hébergements à */
+/* BLOC 1 - Section 2 Partie Résultats All */
 
-/* Bloc Les plus populaires */
-.Populaires{
-    background-color: yellow;
-    width: 33%;
-}
-.fa-chart-line{
-        color: black
+    /* BLOC 2-  Résultats Logements */
+.blue {
+    color: #0065FC; 
     }
 
-/* Fermeture Bloc Les plus populaires */
+.grey{
+    color:#F2F2F2
 }
-/* Bloc Activités */
-.Activités{
-    background-color:darksalmon;
-    width: 100%;
+
+.Resultats_Logements{
+    background-color: coral;
+    height: 700px;
 }
-/* Fermeture Bloc Activités */
+
+
+.header_bloc-hebergements h1{
+color: black;
+font-family: "Raleway-ExtraBold", Arial, Verdana, sans-serif;
+}
+
+
+/* Photo 1 - BLOC */
+.H1{
+    background-color: WHITE;
+    width: 200px;
+    height: 156px;
+    padding: 2px;
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-top: -15px;
+}
+
+/* Photo 1 - cadre */
+.photoH1{
+ width:200px;
+ height: 95px;
+ overflow: hidden;
+ border: none;
+ border-top-left-radius: 10px;
+ border-top-right-radius: 10px;
+}
+/* Photo 1 - reelle */
+.photoH1 img{
+  width: 203.6px;
+  height: 136px; 
+  margin-left: 0px;
+  margin-top: -20px;
+  margin-left: -3px;
+  }
+.text1H1{
+    font-family: "Raleway-ExtraBold", Arial, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 0.8em;
+    margin-bottom: -12px;
+    margin-top: -7px;
+    margin-left: 10px;
+}
+.text2H1{
+    font-family: "Raleway-ExtraBold", Arial, Verdana, sans-serif;
+    font-size: 0.8em;
+    margin-bottom: -8px;
+    margin-left: 10px;
+}
+
+.Raleway-ExtraboldItalic{
+    font-family:"Raleway-ExtraBoldItalic", Arial, Verdana, sans-serif;
+}
+
+.starrating4{
+    font-size: 0.7em;
+    margin-left: 10px;
+}
+        /* BLOC 3 - Résulats Hébergements */
+        /* Fermeture BLOC 3 - Résulats Hébergements */
+
+        /* BLOC 4 - Résulats Populaires*/
+        /* Fermeture BLOC 4 - Résulats Populaires*/
+    /* Fermeture BLOC 2-  Résultats Logements */
+
+    /* BLOC 5 - Activités */
+
+    /* Fermeture BLOC 5 - Activités */
+
+    /* Fermeture BLOC 1 - Résultats */
+
+
+
+
 
 /* Footer - CLOSED ON 10/04/2021 */
 .footer_site_reservia{
     display: flex;
+    font-family: "Raleway-Regular", Arial, Verdana, sans-serif;
     font-size: 0.8em;
     color:black;
     list-style-type: none;
