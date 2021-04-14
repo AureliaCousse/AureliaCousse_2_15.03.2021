@@ -319,6 +319,55 @@ padding-left: 15px;
 
 
 
+/* BLOC 1 - Résultats GRID*/
+
+#gridallresults{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 450px 390px;
+    margin-top: 30px;
+    grid-gap: 30px;
+}
+#gridhebergements{
+    background-color: darksalmon;
+    border-radius: 15px;  
+}
+
+#gridlogements{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    height: 70%;
+    grid-gap: 8px;
+    padding : 8px;
+}
+
+.gridlogement{
+    background-color: dodgerblue;
+}
+#gridpopulaires{
+    background-color:darksalmon;
+    border-radius: 15px;
+}
+#gridactivites{
+    background-color: rgb(234, 238, 174);
+    grid-column:1/3;
+}
+
+
+/* Fermeture BLOC 1 - Résultats GRID*/
+
+
+
+
+
+
+
+
+
+
+
+
 /* Footer - CLOSED ON 10/04/2021 */
 .footer_site_reservia{
     display: flex;
