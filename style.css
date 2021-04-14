@@ -109,6 +109,8 @@ nav a:hover{
     border-left: none;
     border-width: 0.7px;
 }
+
+
 /* Fermeture Bloc Recherche - CLOSED ON 11/04/2021*/
 
 /* Bloc Filtres - CLOSED ON 12/04/2021*/ 
@@ -150,8 +152,20 @@ border-radius: 50%;
 }
 
 .filtre input:checked + label {
-background-color:#93BCFC ;
+background-color:#0065FC ;
 }
+
+.filtre input:hover + label{
+background-color:#0065FC;;
+}
+
+.filtre i:hover{
+color:white;   
+}
+
+.filtre input:checked + label i{
+    color:white;
+    }
 .filtre input{
 display: none;
 
@@ -214,13 +228,17 @@ margin-right: 10px;;
 
 .Resultats_Logements{
     background-color: coral;
-    height: 700px;
+    height: 450px;
+    width: 1500px;
+    border-radius: 15px;
 }
 
 
 .header_bloc-hebergements h1{
 color: black;
 font-family: "Raleway-ExtraBold", Arial, Verdana, sans-serif;
+padding-top: 30px;
+padding-left: 15px;
 }
 
 
@@ -282,11 +300,21 @@ font-family: "Raleway-ExtraBold", Arial, Verdana, sans-serif;
         /* Fermeture BLOC 4 - Résulats Populaires*/
     /* Fermeture BLOC 2-  Résultats Logements */
 
-    /* BLOC 5 - Activités */
 
-    /* Fermeture BLOC 5 - Activités */
+/* BLOC 5 - Activités */
+#Activités{
+    background-color:lightskyblue;
+    height:400px;
+    color: black;
+    font-family: "Raleway-ExtraBold", Arial, Verdana, sans-serif;
+    padding-top: 30px;
+    padding-left: 15px;
+    margin-top: 30px;;
+}
+ 
+/* Fermeture BLOC 5 - Activités */
 
-    /* Fermeture BLOC 1 - Résultats */
+/* Fermeture BLOC 1 - Résultats */
 
 
 
