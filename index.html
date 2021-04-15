@@ -1,5 +1,5 @@
-<!DOCTYPE html>                                         <!--ceci est un document de type HTML5-->
-<html>                                                  <!-- html -->
+<!DOCTYPE html>                              <!--ceci est un document de type HTML5-->
+<html lang="fr">                                                  <!-- html -->
   <head>                                                <!-- head -->
     <meta charset="UTF-8">                              <!-- pour conserver l'encodage et les accents -->
     <link rel="stylesheet" href="style.css" />          <!-- pour faire le lien avec la page css -->
@@ -9,7 +9,7 @@
     <meta name="description" content="Site de réservation d'hébergements et activités pour des vacances de rêve partout en France" />
     
     
-    <meta name="twitter:card" value="summary"/>          <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary"/>          <!-- Twitter Card data -->
     <meta name=”twitter:site” content="http://www.reservia.com/" />
     <meta name=”twitter:title” content=”Reservia” />
     <meta name=”twitter:description” content="Site de réservation d'hebergements et activités pour des vacances de rêve partout en France."  />
@@ -23,22 +23,16 @@
 
   </head>                                               <!-- fin du head-->
   
-    <body>                                              <!-- body: la partie visible du site) -->
+<body>                                              <!-- body: la partie visible du site) -->
 
     <div id="bloc_page">                                <!-- Ceci est un Bloc page/Main wrapper-->
         
-            <section>                                  <!-- A SUPPRIMER -->
-            <div class="courage">                      <!-- A SUPPRIMER -->                  
-           <p>Courage Aurélia! Tu vas y arriver!</p>   <!-- A SUPPRIMER -->
-           <p>DON'T GIVE UP & CHEER UP!</p>            <!-- A SUPPRIMER -->
-           </div>                                      <!-- A SUPPRIMER -->
-           </section>                                  <!-- A SUPPRIMER -->
-
-<!-- Header - CLOSED ON 10/04/2021-->          
+            
+<!-- Header - CLOSED -->          
     <header>                                            
 
         <div class="logo">                                 <!-- Le Logo -->                                 
-            <img src="images\Reservia.svg"> 
+            <img src="images/Reservia.svg" alt="logo reservia" /> 
         </div>                         
                                       
         <nav>                                              <!-- Menu Liens de Navigation -->
@@ -50,18 +44,19 @@
         </nav>
 
     </header>                                           
-<!-- Fermeture du Header - CLOSED ON 10/04/2021 -->
+<!-- Fermeture du Header - CLOSED  -->
 
-    <section>
+
 
     <!-- Section 1 Partie Recherche -->
 
-    <!-- Section 1.1 Barre de Recherche - CLOSED ON 11/04/2021-->
+    <!-- Section 1.1 Barre de Recherche - CLOSED -->
         <div class="titre">
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            Trouvez votre hébergement pour des vacances de rêve
+        </div> <br />
+        <div class="soustitre">
+            En plein centre ville ou en pleine nature
         </div>
-            <h6>En plein centre ville ou en pleine nature</h6>
-       
 
         <div class="bloc_recherche">
 
@@ -80,104 +75,104 @@
                 </div> 
         </div> <br />
 
-        <!-- Fermeture Section 1.1 Barre de Recherche - CLOSED ON 11/04/2021-->
+        <!-- Fermeture Section 1.1 Barre de Recherche - CLOSED -->
         
-        <!-- Section 1.2 Boutons Filtres - CLOSED ON 12/04/2021-->                 
+        <!-- Section 1.2 Boutons Filtres - CLOSED -->                 
             <div class="liste_filtres">
-                <form method="post" action="traitement.php"> <!-- nom action "traitement.php" est fictif A MODIFIER -->
-                <ul class="choix">
+                <form method="post" action="traitement.php">    <!-- nom action "traitement.php" est fictif A MODIFIER -->
+                    <ul class="choix">
 
-                    <li class="filtre_select">
-                        <h4>Filtres</h4>
-                    </li>
+                        <li class="filtre_select">
+                            <h4>Filtres</h4>
+                        </li>
 
-                    <li>
-                        <div class="filtre">
-                            <div class="bouton eco">
-                                <input type="checkbox" name="filtre" id="checkeco"/>
-                                <label for="checkeco"><i class="fas fa-money-bill-wave fa-xs"></i></label>
-                            </div>
-                            <div class="label">
+                        <li>
+                            <div class="filtre">
+                                <div class="bouton eco">
+                                    <input type="checkbox" name="filtre" id="checkeco"/>
+                                    <label for="checkeco"><i class="fas fa-money-bill-wave fa-xs"></i></label>
+                                </div>
+                                <div class="label">
                                 Economique
+                                </div>
                             </div>
-                        </div>
-                    </li>
+                        </li>
                     
-                    <li>
-                        <div class="filtre">
-                            <div class="bouton familial">
-                                <input type="checkbox" name="filtre" id="checkfamilial"/>
-                                <label for="checkfamilial"><i class="fas fa-child fa-xs"></i></label>
+                        <li>
+                            <div class="filtre">
+                                <div class="bouton familial">
+                                    <input type="checkbox" name="filtre" id="checkfamilial"/>
+                                    <label for="checkfamilial"><i class="fas fa-child fa-xs"></i></label>
+                                </div>
+                                <div class="label">
+                                    Familial
+                                </div>
                             </div>
-                            <div class="label">
-                                Familial
-                            </div>
-                        </div>
-                    </li>
+                        </li>
 
-                    <li>
-                        <div class="filtre">
-                            <div class="bouton">
-                                <input type="checkbox" name="filtre" id="checkromantique"/>
-                                <label for="checkromantique"><i class="fas fa-heart fa-xs"></i></label>
+                        <li>
+                            <div class="filtre">
+                                <div class="bouton">
+                                    <input type="checkbox" name="filtre" id="checkromantique"/>
+                                    <label for="checkromantique"><i class="fas fa-heart fa-xs"></i></label>
+                                </div>
+                                <div class="label">
+                                    Romantique
+                                </div>
                             </div>
-                            <div class="label">
-                                Romantique
-                            </div>
-                        </div>
-                    </li>
+                        </li>
 
-                    <li>
-                        <div class="filtre">
-                            <div class="bouton">
-                                <input type="checkbox" name="filtre" id="checkanimaux"/>
-                                <label for="checkanimaux"><i class="fas fa-dog fa-xs"></i></label>
+                        <li>
+                            <div class="filtre">
+                                <div class="bouton">
+                                    <input type="checkbox" name="filtre" id="checkanimaux"/>
+                                    <label for="checkanimaux"><i class="fas fa-dog fa-xs"></i></label>
+                                </div>
+                                <div class="label">
+                                    Animaux autorisés
+                                </div>
                             </div>
-                            <div class="label">
-                                Animaux autorisés
-                            </div>
-                        </div>
-                    </li>
-                <ul>
+                        </li>
+                    </ul>
                 </form>
             </div> 
-<!-- Fermeture Section 1.2 Boutons Filtres - CLOSED ON 12/04/2021-->
+<!-- Fermeture Section 1.2 Boutons Filtres - CLOSED -->
         
-<!-- Section 1.3 Info Disponibilités - CLOSED ON 12/04/2021-->
+<!-- Section 1.3 Info Disponibilités - CLOSED -->
     <div class="info_dispo">
-        <h6><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville. <em>   ATTENTION ! Police à revoir</em></h6>
+        <h6><i class="fas fa-info fa-xs"></i>Plus de 500 logements sont disponibles dans cette ville.</h6>
     </div>
-<!-- Fermeture Section 1.3 Info Disponibilités - CLOSED ON 12/04/2021-->
+<!-- Fermeture Section 1.3 Info Disponibilités - CLOSED  -->
 
 
 <!-- BLOC 1: Section 2 Partie Résultats -->
 <section class="allresults">       
-<!-- BLOC 2: Résultats Logements -->
-<div class="Resultats_Logements">
-<!-- BLOC 3: Résultats Hébergements -->
-<div id="Hébergements">             <!-- id pour ancre Hébergements -->
-        <!-- BLOC 31: Header Hébergements -->
-            <div class="header_bloc-hebergements">
-             <h1>Hébergements à Marseille</h1>
+    <!-- BLOC 2: Résultats Logements -->
+    <div class="Resultats_Logements">
+        <!-- BLOC 3: Résultats Hébergements -->
+        <div id="Hébergements">             <!-- id pour ancre Hébergements -->
+            <!-- BLOC 31: Header Hébergements -->
+            <div class="header_bloc_hebergements">
+                <h2>Hébergements à Marseille</h2>
             </div>
-        <!-- BLOC 32: Résultats 6 Hébergements -->
+            <!-- BLOC 32: Résultats 6 Hébergements -->
             <div class ="all_hébergements">
-            <!-- BLOC 321: Hébergement 1 -->
-                <a href="images\hebergements\3_medium\marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                <!-- BLOC 321: Hébergement 1 -->
+                <a href="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
                 <div class="H1">
-                <!-- BLOC 3211: Hébergement 1 - photo -->
+                    <!-- BLOC 3211: Hébergement 1 - photo -->
                     <div class="photoH1">
-                        <img src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                        <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Photo logement">
                     </div>
-                <!-- BLOC 3212: Hébergement 1 - text1 -->
+                    <!-- BLOC 3212: Hébergement 1 - text1 -->
                     <div class="text1H1">
                         <p>Auberge La Cannebière</p>
                     </div>
-                <!-- BLOC 3213: Hébergement 1 - text2 -->
+                    <!-- BLOC 3213: Hébergement 1 - text2 -->
                     <div class="text2H1">
                         <p>Nuit à partir de<strong style="font-family:Raleway-ExtraboldItalic"> 25€</strong></p>
                     </div>
-                <!-- BLOC 3214: Hébergement 1 - stars -->
+                    <!-- BLOC 3214: Hébergement 1 - stars -->
                     <div class="starrating4">
                         <i class="fas fa-star blue"></i>
                         <i class="fas fa-star blue"></i>
@@ -187,108 +182,67 @@
                     </div> 
                 </div>
                 </a>
-                
-
- 
-
-</div><!-- Fermeture BLOC 3: Résultats Hébergements -->
-</div> <!-- Fermeture BLOC 2: Résultats Logements -->
+            </div>
+        </div>  <!-- Fermeture BLOC 3: Résultats Hébergements -->      
+    </div> <!-- Fermeture BLOC 2: Résultats Logements -->
 </section> <!-- Fermeture BLOC 1: Section 2 Partie Résultats -->
-
-<!-- Fermeture Section 2 Partie Résultats Logements -->
-
-<div id="gridallresults">
-
-    <div id="gridhebergements">
-    </div>
-
-    <div id="gridpopulaires">
-    </div>
-
-    <div id="gridactivites">
-    </div>
-
-</div>
-
-
-
-
-
-
-
 
 
 <!-- Section 3 Partie Activités -->
 <section>
-    <div id="Activités">        <!-- id pour ancre Activités -->                                    
-        <h1>Activités à Marseille</h1>
+    <div id="Activités">                <!-- id pour ancre Activités -->                                    
+        <h2>Activités à Marseille</h2>
     </div>
-    </section>
+</section>
     <!-- Fermeture Section 3 Partie Activités -->
     
-<!-- Fermeture BLOC 1: Section 2 Partie Résultats -->
-
-
-<!-- BLOC 1: Section 2 Partie Résultats                 BIS GRID -->
-
-
-
-
-
-
-
-<!-- Fermeture BLOC 1: Section 2 Partie Résultats       BIS GRID -->
-
-
 
  <!-- Footer - CLOSED ON 10/04/2021-->
 <footer>                                               
     <div class="footer_site_reservia">                     <!-- Bloc Div Footer -->
-    <div class="A_propos">                                 <!-- Footer Part1: A propos -->
-            <ul><strong>A propos</strong> 
-
-                <li>
-                <a href="contenu/fonctionnement.html">Fonctionnement du site</a> 
-                </li>
+        <div class="A_propos"><h5>A propos</h5>                             <!-- Footer Part1: A propos -->
+                <ul>
+                    <li>
+                        <a href="contenu/fonctionnement.html">Fonctionnement du site</a> 
+                    </li>
                 
-                <li>
-                    <a href="contenu/cgv.html">Conditions générales de vente</a> 
-                </li>
-                <li>
-                    <a href="contenu/donnees_confidentialite.html">Données et confidentialité</a> 
-                </li>
+                    <li>
+                        <a href="contenu/cgv.html">Conditions générales de vente</a> 
+                    </li>
+                    <li>
+                        <a href="contenu/donnees_confidentialite.html">Données et confidentialité</a> 
+                    </li>
+                </ul>
+        </div>                                              <!-- Fermeture Footer Part1: A propos -->
 
-            </ul>
-        </div>                                          <!-- Fermeture Footer Part1: A propos -->
-
-    <div class="Nos_hébergements">                      <!-- Footer Part2: Nos hébergements -->
-        <ul><strong>Nos hébergements</strong> 
-            <li>
-            <a href="contenu/charte_qualité.html">Charte Qualité</a> 
-            </li>
+        <div class="Nos_hébergements"><h5>Nos hébergements</h5>                      <!-- Footer Part2: Nos hébergements -->
+                <ul>
+                    <li>
+                     <a href="contenu/charte_qualité.html">Charte Qualité</a> 
+                    </li>
             
-            <li>
-                <a href="contenu/soumettre.html">Soumettre votre hôtel</a> 
-            </li>
-        </ul>            
-    </div>                                              <!-- Fermeture Footer Part2: Nos hébergements --> 
+                    <li>
+                        <a href="contenu/soumettre.html">Soumettre votre hôtel</a> 
+                    </li>
+                </ul>            
+        </div>                                              <!-- Fermeture Footer Part2: Nos hébergements --> 
     
-    <div class="Assistance">                            <!-- Footer Part3: Assistance -->
-        <ul><strong>Assistance</strong> 
-            <li>
-            <a href="contenu/aide.html">Centre d'aide</a> 
-            </li>
+        <div class="Assistance"><h5>Assistance</h5>                            <!-- Footer Part3: Assistance -->
+                <ul>
+                    <li>
+                        <a href="contenu/aide.html">Centre d'aide</a> 
+                    </li>
             
-            <li>
-                <a href="contenu/nous_contacter.html">Nous contacter</a> 
-            </li>
-        </ul>   
-    </div>                                              <!-- Fermeture Footer Part3: Assistance -->
-</div>                                                  <!-- Fermeture Bloc Div Footer -->
+                    <li>
+                        <a href="contenu/nous_contacter.html">Nous contacter</a> 
+                    </li>
+                </ul>   
+        </div>                                              <!-- Fermeture Footer Part3: Assistance -->
+    </div>                                                  <!-- Fermeture Bloc Div Footer -->
 </footer>                                               
-<!-- Fermeture Footer - CLOSED ON 10/04/2021-->
+<!-- Fermeture Footer - CLOSED -->
 
-        </section>      <!-- fermeture A VERIFIER .......A VERIFIER ......A VERIFIER ........-->
+       
     </div>                          <!-- fermeture Bloc page/Main wrapper-->
   </body>                           <!-- fermeture body-->
 </html>                             <!-- fermeture html -->
