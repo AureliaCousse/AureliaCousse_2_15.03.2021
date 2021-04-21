@@ -228,60 +228,62 @@ nav a:hover{
 /* Fermeture Bloc Info Disponibilités - CLOSED  */
 
 /* BLOC 1 - Partie Résultats*/
+.allresults{
+    width: 100%;
+    display: flex;
+    margin-right: 15px;
+}
 
 /* BLOC 2-  Résultats Logements : Hébergements + Populaires */
-
+.Resultats_Logements{
+    width: 100%;
+    display: flex;    
+}
 
 /* BLOC 3 - Résultats Hébergements */
 .headerblochebergements{
-    margin-right: 700px;
-    margin-left: 20px;
+    width: 100%;
+    font-weight: bolder ;    
 }
-
-#Hebergements{
-    height: 700px;
-    width: 1200px;
+.Hebergements{
+    width: 60%;
+    height: 800px;
     background-color: #F2F2F2;
-    border-radius: 15px;
-    padding-top: 15px;
-    padding-left: 15px;
+    border-radius: 1vw;
+    padding: 3px;
     display: flex;
     flex-wrap: wrap;
 }
+
+/* BLOC Hébergements de H1 à H6*/
 .BlocHebergement{
     background-color: white;
-    width: 350px;
-    height: 293px;
+    width: 30%;
+    height: 180px;
     border-radius: 10px;
-    margin-left: 15px;
-    margin-top: 15px;
+    margin: auto;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px grey;
 }
 
-.photoH1{
-    width: 340px;
-    height: 170px; 
-    border-radius: 10px;
-    margin-left: 6px;
-    margin-top: 6px;
-}
 .Htext1{
     font-family: "Raleway-ExtraBold", Arial, Verdana, sans-serif;
     font-weight: bolder;
-    font-size: 1.2em;
-    margin-bottom: 5px;
-    margin-top: 10px;
+    font-size: 1em;
     margin-left: 10px;
 }
 .Htext2{
     font-family: "Raleway-Regular", Arial, Verdana, sans-serif;
-    font-size: 1.2em;
-    margin-bottom: 5px;
+    font-size: 1em;
     margin-left: 10px;
+    margin-top: -15px;
 }
 .starrating{
     font-size: 0.7em;
     margin-left: 10px;
-    margin-top: 10px;
+    margin-top: -15px;
 }
 .blue {
     color: #0065FC; 
@@ -290,6 +292,17 @@ nav a:hover{
     color:rgb(217,217,217);
 }
 
+/* BLOC Photo Hébergements*/
+
+.photoH{
+    width: 100%;
+    height: 58%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+}
+
+}
 /* Fermeture BLOC Hébergement  */
 
 .headerblochebergements{
@@ -297,13 +310,29 @@ font-size: 1.5em;
 font-weight: bold;   
 }
 .footerblochebergements{
-    font-size: 1em; 
-    font-weight: bold; 
+font-size: 1em; 
+font-weight: bold;
 }
 
 /* Fermeture BLOC 3 - Résultats Hébergements */
 
 /* BLOC 4: Résultats Populaires*/
+
+#populaires{
+    width: 30%;
+    height: 800px;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+    display: flex;
+    flex-wrap: wrap; 
+    margin-left: 20px; 
+}
+#populaires p{
+    font-size: 1.5em; 
+    font-weight: bolder;
+}
 /* Fermeture BLOC 4 - Résultats Populaires*/
     
 
@@ -311,14 +340,32 @@ font-weight: bold;
 
 
 /* BLOC 5 - Activités */
-#Activités{
+#activites{
     background-color:lightskyblue;
     height:400px;
     color: black;
     font-family: "Raleway-ExtraBold", Arial, Verdana, sans-serif;
     padding-top: 30px;
     padding-left: 15px;
-    margin-top: 30px;
+    margin-top: 1200px;                             /* ATTENTION: MARGIN A REDUIRE!!!!!! */
+    display: flex;
+}
+
+.activites img{
+box-shadow: 0px 0px 5px grey;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;   
+}
+
+.textA{
+    color: black;
+    font-family: "Raleway-ExtraBold", Arial, Verdana, sans-serif;  
+    font-weight: bolder;  
+}
+
+.photoA1{
+    width: 30%;
+    height: auto;
 }
 /* Fermeture BLOC 5 - Activités */
 
@@ -381,6 +428,29 @@ a{
 }
 /* Fermeture Footer - CLOSED */
 
-
-
-
+.test p{
+    margin:0;
+    padding:0;
+}
+.test{
+    background:khaki;
+    width:66%;
+    height:auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.test .bloc{
+    background:goldenrod;
+    width:auto;
+    height:auto;
+    padding:10px;
+    border-radius:10px;
+    margin:auto;
+    position:relative;
+}
+.test .bloc img{
+    width:200px;
+    height:auto;
+    clip-path:inset(25px 20px 20px 20px);
+    border:2px black solid;
+}
