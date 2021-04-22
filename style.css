@@ -1,3 +1,4 @@
+/* VERSION AVEC UNITE FONT REM */
 /* Définition des polices utilisées sur ce site */
 @font-face{                                                    
     font-family: "Raleway-Regular"; 
@@ -17,7 +18,7 @@
 /* Ci-dessous les caractéristiques communes à toute la page web */ 
 body{
     font-family: "Raleway-Regular", Arial, Verdana, sans-serif; /* utilisation des polices sur la totalité de la page */
-    font-weight: 100%; /* nota bene 100% = 16px Ailleurs mettre combien de rem par ex 2 rem si on veut 32px */
+    font-weight: 100%; /* nota bene 100% = 16px  - Ailleurs mettre combien de rem - par ex au lieu de 32px mettre 2rem */
 }
     
 /* Fermeture des caractéristiques communes à toute la page web */ 
@@ -36,7 +37,7 @@ header{
     align-items: baseline;
 }
 
-/* Navigation Menu - CLOSED  */
+/* Navigation Menu */
 nav ul{
     list-style-type: none;
     display: flex;
@@ -53,7 +54,7 @@ nav li{
 }
 
 nav a{
-    font-size: 0.8em;
+    font-size: 1rem;
     color:#0065FC;
     padding-bottom: 15px;
     text-decoration: none;
@@ -63,25 +64,25 @@ nav a{
 }
 nav a:hover{
     border-top: 1.5px solid #0065FC;
-    padding-top: 50px;
+    padding-top: 20px;
     background-color: #FFFFFF;
     font-weight: bold;
 }
-/* Navigation Menu - CLOSED  */
+/* Navigation Menu  */
 
-/* Bloc Recherche - CLOSED */ 
+/* Bloc Recherche */ 
 
 .titre{
     margin-bottom: -20px;
 }
 
 .titre{
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: bold;
     margin-top: 30px;
 }
 .soustitre{
-    font-size: 1.1em;
+    font-size: 1.1rem;
     font-family: "Raleway-Light", Arial, Verdana, sans-serif;
     margin-top: 8px;
     margin-bottom: 20px;
@@ -100,14 +101,14 @@ nav a:hover{
     height: 55px; 
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    font-size: 25px;
+    font-size: 2rem;
 }
 .destination input[type="submit"] {
     color:white;
     background-color: #0065FC;
     width: 142px;
     height: 55px;
-    font-size: 1.2em;
+    font-size: 1rem;
     font-weight: bold;
     border-style: none;
     border-top-right-radius: 15px;
@@ -127,9 +128,9 @@ nav a:hover{
     border-left: none;
     border-width: 0.7px;
 }
-/* Fermeture Bloc Recherche - CLOSED */
+/* Fermeture Bloc Recherche */
 
-/* Bloc Filtres - CLOSED */ 
+/* Bloc Filtres */ 
 
 .liste_filtres{
     display: flex; 
@@ -147,7 +148,7 @@ nav a:hover{
 }
 .filtre_select{
     display: flex;
-    font-size: 20px;
+    font-size: 1.3rem;
     font-weight: bolder;
     margin-left: -35px;
 }
@@ -196,6 +197,10 @@ nav a:hover{
     padding-left: 6px;
 } 
 
+.label{
+    font-size: 1rem;
+    font-weight: bold;
+}
 .choix i{
     display: flex;
     color: #0065FC;  
@@ -203,15 +208,15 @@ nav a:hover{
     height: 45px;
     align-items: center;
     justify-content: center; 
-    font-size: 20px;
+    font-size: 1.3rem;
 }
 
 .filtre .bouton{
     margin-left: -2px;
 }
-/* Fermeture Bloc Filtres - CLOSED  */
+/* Fermeture Bloc Filtres */
 
-/* Bloc Info Disponibilités - CLOSED */
+/* Bloc Info Disponibilités */
 .info_dispo h6{
     display: flex;
     align-items: center;
@@ -231,7 +236,7 @@ nav a:hover{
     margin-bottom: 2px; 
     margin-right: 10px;
 }
-/* Fermeture Bloc Info Disponibilités - CLOSED  */
+/* Fermeture Bloc Info Disponibilités*/
 
 /* BLOC 1 - Partie Résultats*/
 .allresults{
@@ -247,7 +252,7 @@ nav a:hover{
 }
 
 .starrating{
-    font-size: 0.7em;
+    font-size: 0.8rem;
     margin-left: 10px;
     margin-top: -15px;
 }
@@ -262,10 +267,10 @@ nav a:hover{
 .headerblochebergements{
     width: 100%;
     font-weight: bolder ;
-    font-size: 25px;     
+    font-size: 1.3rem;     
 }
 .footerblochebergements{
-    font-size: 20px; 
+    font-size: 1.2rem; 
     font-weight: bold;
     padding-top: 30px;
     margin-bottom: 20px;
@@ -300,14 +305,14 @@ nav a:hover{
 .Htext1{
     font-family: "Raleway-ExtraBold", Arial, Verdana, sans-serif;
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 1.3rem;
     margin-left: 10px;
     margin-bottom: -10px;
     margin-top: 10px;
  }
 .Htext2{
     font-family:"Raleway-Medium", Arial, Verdana, sans-serif;
-    font-size: 20px;
+    font-size: 1.2rem;
     margin-left: 10px;
     
 }
@@ -328,7 +333,7 @@ nav a:hover{
 .headerblocpopulaires{
     width: 100%;
     font-weight: bolder ;
-    font-size: 1.5em; 
+    font-size: 1.5rem; 
     font-weight: bold; 
     margin-left: 15px;     
 }
@@ -341,7 +346,6 @@ nav a:hover{
     padding-left: 1px;
     display: flex;
     flex-direction: column;
-    
     margin-left: 20px; 
 }
 
@@ -373,7 +377,7 @@ nav a:hover{
 .headeractivites{
     width: 100%;
     font-weight: bolder;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     padding-left: 15px;
     background-color: red;
 }
@@ -399,12 +403,11 @@ nav a:hover{
 }
 
 .column{
-    width: calc(25% - 30px);
+    width: calc(25% - 30px); /* cad calcul auto pour que cela prenne 25% de la largeur avec une marge de 30px  */
     height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* pour mettre un espace regulier et identique entre les items sans marge exterieure  */    
-  
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
@@ -441,11 +444,11 @@ nav a:hover{
 /* Fermeture BLOC 1 - Résultats */
 
 
-/* Footer - CLOSED  */
+/* Footer */
 .footer_site_reservia{
     display: flex;
     font-family: "Raleway-Regular", Arial, Verdana, sans-serif;
-    font-size: 0.8em;
+    font-size: 1rem;
     color:black;
     list-style-type: none;
     background-color: #F2F2F2; 
@@ -476,7 +479,7 @@ a{
 }
 .A_propos h5{
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1rem;
 }
 .Nos_hébergements{
     
@@ -485,7 +488,7 @@ a{
 }
 .Nos_hébergements h5{
     font-weight: bold;
-    font-size: 1em;    
+    font-size: 1rem;    
 }
 .Assistance{
    
@@ -494,8 +497,8 @@ a{
 }
 .Assistance h5{
     font-weight: bold;
-    font-size: 1em;    
+    font-size: 1rem;    
 }
-/* Fermeture Footer - CLOSED */
+/* Fermeture Footer*/
 
 
