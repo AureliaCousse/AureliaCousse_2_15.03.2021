@@ -329,7 +329,8 @@ nav a:hover{
     width: 100%;
     font-weight: bolder ;
     font-size: 1.5em; 
-    font-weight: bold;      
+    font-weight: bold; 
+    margin-left: 15px;     
 }
 .populaires{
     width: 33%;
@@ -345,13 +346,14 @@ nav a:hover{
 
 .BlocPopulaire{
     background-color: white;
-    width: 80%;
+    width: 90%;
     height: 140px;
     border-radius: 10px;
     margin: auto;
     padding: 3px;
     display: flex;
-    flex-direction: row;
+    
+    flex-wrap: wrap;
     box-shadow: 0px 0px 5px grey;
 }
 
