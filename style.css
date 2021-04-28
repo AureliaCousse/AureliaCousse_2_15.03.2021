@@ -12,66 +12,50 @@
     font-family: "Raleway-VariableFont_wght";
     src: url("polices/Raleway-VariableFont_wght.ttf") format("truetype"); 
     font-family: "Raleway-Medium"; 
-    src: url("polices/Raleway-Medium.ttf") format("truetype");                                                            /* police fournie en .ttf only */
+    src: url("polices/Raleway-Medium.ttf") format("truetype"); 
+    font-family: "Raleway-ExtraLight"; 
+    src: url("polices/Raleway-ExtraLight.ttf") format("truetype"); 
+    font-family: "Raleway-Bold"; 
+    src: url("polices/Raleway-Bold.ttf") format("truetype");                                                               /* police fournie en .ttf only */
 }
 
 /* Ci-dessous les caractéristiques communes à toute la page web */ 
 body{
     font-family: "Raleway-Regular", Arial, Verdana, sans-serif; /* utilisation des polices sur la totalité de la page */
-    font-weight: 100%; /* nota bene 100% = 16px  - Ailleurs mettre combien de rem - par ex au lieu de 32px mettre 2rem */
+    font-weight: 100%; /* nota bene 100% = 16px  - Ailleurs mettre combien de rem - par ex: au lieu de 32px mettre 2rem */
 }
     
 /* Fermeture des caractéristiques communes à toute la page web */ 
 
 /* Header */
+
+.logo{
+    margin-right: auto; /* permet de faire passer la marge droite du logo au max et donc pousser la nav tout à droite de la page */
+}
+
 header{
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 }
 
-/* Logo */
-#logo{
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-}
-
-/* Navigation Menu */
-nav ul{
-    list-style-type: none;
-    display: flex;
-    padding-left: 0px;
-    margin-bottom: 2px;
-    margin-top: 20px;
-    line-height: 35px;
-}
-nav li{
-    margin-right:10px;
-    list-style: none;
-    text-decoration:none;
-    line-height: 15px;    
-}
-
-nav a{
-    font-size: 1rem;
-    color:#0065FC;
-    padding-bottom: 15px;
+header a{
+    margin-right: 40px;
     text-decoration: none;
+    padding: 20px 0px; /* padding pour monter la ligne au dessus de la nav quand hover */
+    color:#0065FC;
 }
+
 .black{
     color: black
 }
-nav a:hover{
+
+header a:hover{
     border-top: 1.5px solid #0065FC;
-    padding-top: 20px;
-    background-color: #FFFFFF;
     font-weight: bold;
 }
-/* Navigation Menu  */
+/* Fermeture Header */
 
 /* Bloc Recherche */ 
-
 .titre{
     margin-bottom: -20px;
 }
@@ -83,9 +67,10 @@ nav a:hover{
 }
 .soustitre{
     font-size: 1.1rem;
-    font-family: "Raleway-Light", Arial, Verdana, sans-serif;
+    font-family: "Raleway-ExtraLight", Arial, Verdana, sans-serif;
     margin-top: 8px;
     margin-bottom: 20px;
+    color:red;
 }
 .bloc_recherche{
     display: flex;
@@ -108,11 +93,12 @@ nav a:hover{
     background-color: #0065FC;
     width: 142px;
     height: 55px;
-    font-size: 1rem;
     font-weight: bold;
     border-style: none;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    font-family:"Raleway-ExtraLight", Arial, Verdana, sans-serif;
+    font-size: 1.2rem;
     }
 
 .destination input[type="search"] {
@@ -127,15 +113,11 @@ nav a:hover{
     border-right: none;
     border-left: none;
     border-width: 0.7px;
+    margin-left: 15px;
 }
 /* Fermeture Bloc Recherche */
 
 /* Bloc Filtres */ 
-
-.liste_filtres{
-    display: flex; 
-}
-
 .liste_filtres ul{
     display: flex;   
 }
@@ -194,12 +176,12 @@ nav a:hover{
 
 .choix .label {
     padding-right: 20px;
-    padding-left: 6px;
+    padding-left: 6px;  
 } 
 
 .label{
     font-size: 1rem;
-    font-weight: bold;
+    font-family: "Raleway-Bold", Arial, Verdana, sans-serif; 
 }
 .choix i{
     display: flex;
@@ -220,8 +202,10 @@ nav a:hover{
 .info_dispo h6{
     display: flex;
     align-items: center;
-    font-family: "Raleway-Light", Arial, Verdana, sans-serif; 
-    font-size: medium;
+    font-family: "Raleway-Bold", Arial, Verdana, sans-serif; 
+    font-size: 1rem;
+    color:red;
+    font-weight: lighter;
  }
 
 .info_dispo i{
@@ -240,21 +224,24 @@ nav a:hover{
 
 /* BLOC 1 - Partie Résultats*/
 .allresults{
-    width: 100%;
+    min-width: 100%;
     display: flex;
     margin-right: 15px;
+    flex-wrap: wrap-reverse;
 }
 
 /* BLOC 2-  Résultats Logements : Hébergements + Populaires */
 .Resultats_Logements{
-    width: 100%;
-    display: flex;    
+    min-width: 100%;
+    display: flex;
+    align-items: stretch; /* David 23/4: stretch pour avoir les 2 blocs Héberg et pop à la même hauteur  */   
+
 }
 
 .starrating{
-    font-size: 0.8rem;
+    font-size: 1.1rem;
     margin-left: 10px;
-    margin-top: -15px;
+    margin-top: -10px;
 }
 .blue {
     color: #0065FC; 
@@ -267,36 +254,40 @@ nav a:hover{
 .headerblochebergements{
     width: 100%;
     font-weight: bolder ;
-    font-size: 1.3rem;     
+    font-size: 1.5rem;     
 }
 .footerblochebergements{
     font-size: 1.2rem; 
     font-weight: bold;
     padding-top: 30px;
-    margin-bottom: 20px;
-    }
+    margin-bottom: 70px;
+}
 
 .Hebergements{
     width: 67%;
-    height: 800px;
+    height: auto;
     background-color:#F2F2F2;
-    padding-left: 10px;
+    padding-left: 30px;
     display: flex;
     flex-wrap: wrap;
     border-radius: 12px;
 }
 
+
+    
 /* BLOC Hébergements de H1 à H6*/
 .BlocHebergement{
     background-color: white;
-    width: 31%;
-    height: 280px;
-    border-radius: 12px;
+    width: 370px;
+    height: 300px;
+    border-radius: 20px;
     margin: auto;
     display: flex;
     flex-direction: column;
     box-shadow: 0px 0px 5px grey;
     padding: 3px;
+    text-decoration: none;
+    color: black;
 }
 
 .Hebergements a{   /* marge entre les blocs H1 à H6*/
@@ -305,14 +296,14 @@ nav a:hover{
 .Htext1{
     font-family: "Raleway-ExtraBold", Arial, Verdana, sans-serif;
     font-weight: bolder;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin-left: 10px;
     margin-bottom: -10px;
     margin-top: 10px;
  }
 .Htext2{
     font-family:"Raleway-Medium", Arial, Verdana, sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-left: 10px;
     
 }
@@ -320,8 +311,8 @@ nav a:hover{
 .photoH{
     width: 98%;
     height: 58%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     padding: 3px;
     object-fit: cover;
 }
@@ -334,113 +325,170 @@ nav a:hover{
     width: 100%;
     font-weight: bolder ;
     font-size: 1.5rem; 
-    font-weight: bold; 
-    margin-left: 15px;     
+    margin-left: 15px;
+    display: flex; 
+    margin-bottom: -60px;
+    margin-top: -8px;    
+}
+.headerblocpopulaires i{
+    margin-left: 300px;
+    color:black;
+}
+.fa-chart-line{
+    font-size: 2rem;
 }
 .populaires{
     width: 33%;
-    height: 800px;
+    height: auto;
     background-color: #F2F2F2;
     border-radius: 15px;
-    padding-top: 1px;
     padding-left: 1px;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     margin-left: 20px; 
 }
 
 .BlocPopulaire{
     background-color: white;
-    width: 85%;
-    height: 180px;
-    border-radius: 12px;
-    margin: auto;
+    width: 520px;
+    height: 220px;
+    border-radius: 20px;
+    margin: 0 auto;
     padding: 5px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     box-shadow: 0px 0px 5px grey;
+    text-decoration: none;
+    color: black;
 }
-
+.BlocPopulaire .fas{
+    margin-top: 70px;
+}
+.cartepopulaire{
+    width: 50%
+}
 .photoP{
     width: 35%;
     height: 100%;
-    border-top-left-radius: 12px;
-    border-bottom-left-radius: 12px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     object-fit: cover;  
 }
+ .starratingP{
+margin-left: 15px;
+ }
+
 /* Fermeture BLOC 4 - Résultats Populaires*/
 /* Fermeture BLOC 2-  Résultats Logements */
 
 
 /* BLOC 5 - Activités */
-.headeractivites{
+.blocactivites h3{
     width: 100%;
-    font-weight: bolder;
-    font-size: 1.5rem;
-    padding-left: 15px;
-    background-color: red;
 }
 
 .blocactivites{
-    width: 100%;
-    height: 900px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 50px 0;     /* cad marge: 50 en haut & bas ; 0 droite et gauche  */
-    
-}
-.Activite{
-    box-shadow: 0px 0px 10px grey;
-
-}
-.textA{
-    font-weight: bolder;
-    padding-left: 15px;
-    background-color: white;
-    height: 20%;
+    display: grid;
+    grid-template-columns: repeat(4, 23%);
+    grid-template-rows: repeat(10, 30px);
+    grid-gap: 40px;
 }
 
-.column{
-    width: calc(25% - 30px); /* cad calcul auto pour que cela prenne 25% de la largeur avec une marge de 30px  */
-    height: 500px;
+.blocactivites .Activite{
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* pour mettre un espace regulier et identique entre les items sans marge exterieure  */    
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px grey;
+    overflow: hidden;
+    text-decoration: none;
+    color: black;
+} 
+
+.A1 img{
+    height: 86%;
+    width:auto;
+    object-fit: cover;
+    overflow: hidden;
+
 }
 
-.photo{
-    width: 100%;
-    height: 100%;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    object-fit: cover;  
+.A2 img{
+    height: 75%;
+    width:auto;
+    object-fit: cover;
+    overflow: hidden;
+
 }
+
+.A3 img{
+    height: 63%;
+    width:auto;
+    object-fit: cover;
+    overflow: hidden;
+
+}
+
+.A4 img{
+    height: 86%;
+    width:auto;
+    object-fit: cover;
+    overflow: hidden;
+
+}
+.A5 img{
+    height: 70%;
+    width:auto;
+    object-fit: cover;
+    overflow: hidden;
+    
+}
+.A6 img{
+    height: 70%;
+    width:auto;
+    object-fit: cover;
+    overflow: hidden;
+
+}
+/* Cartes Activité A1 à A6 */
 
 .A1{
-    height: 100%;  
+    grid-column: 1;
+    grid-row: 1/11;
 }
+
 .A2{
-    height: 66%;  
+    grid-column: 2;
+    grid-row: 1/7;
 }
+
 .A3{
-    height: 33%;  
+    grid-column: 2;
+    grid-row: 7/11
 }
+
 .A4{
-    height: 100%;  
-}  
+    grid-column: 3;
+    grid-row: 1/11;
+}
+
 .A5{
-    height: 50%;  
+    grid-column: 4;
+    grid-row: 1/6;
 }
+
 .A6{
-    height: 50%;  
+    grid-column: 4;
+    grid-row: 6/11;
 }
 
+.textA{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding-left: 15px;
+}
 /* Fermeture BLOC 5 - Activités */
-
 /* Fermeture BLOC 1 - Résultats */
 
 
@@ -452,7 +500,7 @@ nav a:hover{
     color:black;
     list-style-type: none;
     background-color: #F2F2F2; 
-    margin-top: 600px;   
+    margin-top: 40px;   
 }
 
 .footer_site_reservia ul {
@@ -465,24 +513,24 @@ nav a:hover{
 .footer_site_reservia li {
     list-style: none;
     text-decoration:none;
-    line-height: 15px;      
+    line-height: 30px;  
 }
 
-a{
+.footer_site_reservia a{
     text-decoration: none;
-    color: black;    
+    color: red; 
+    font-family: "Raleway-Light", Arial, Verdana, sans-serif;   
 }
 .A_propos{
-    
     width: 33.33%;
     margin-top: 15px;
+    margin-left: 12px;;
 }
 .A_propos h5{
     font-weight: bold;
     font-size: 1rem;
 }
 .Nos_hébergements{
-    
     width: 33.33%;
     margin-top: 15px;
 }
@@ -491,7 +539,6 @@ a{
     font-size: 1rem;    
 }
 .Assistance{
-   
     width: 33.33%;
     margin-top: 15px;
 }
@@ -501,4 +548,42 @@ a{
 }
 /* Fermeture Footer*/
 
+/* @Media queries à mettre tout à la fin du code*/
+
+@media only screen and (max-width:768px){
+    header{
+        flex-wrap: wrap;
+    }
+    
+    header a{ 
+    width: 50%;
+    margin: 0;
+    }
+    .navinscrire{
+        order: -1;
+        display: flex;
+        justify-content: flex-end;
+        color: #0065FC;
+    }
+    
+    .logo{
+        order: -2;
+    }
+    .navhebergements, .navactivites{
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+    .navhebergements, .navactivites {
+        border-bottom: 3px solid #F2F2F2;
+    }
+    .navhebergements:hover, .navactivites:hover {
+        border-bottom: 3px solid #0065FC;
+    }
+    
+    header a:hover{
+        border-top: none;
+    }
+    }
 
