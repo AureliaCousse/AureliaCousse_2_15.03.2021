@@ -21,53 +21,44 @@
     <meta property="og:image" content="C:\Users\acousse\Documents\EAGLE\Projet_2\1_Documents_de_travail\Fichiers\images\Reservia.svg" />
     <meta property="og:description" content="Site de réservation d'hébergements et activités pour des vacances de rêve partout en France" />
 
-  </head>                                               <!-- fin du head-->
+  </head>                                           <!-- fin du head-->
   
 <body>                                              <!-- body: la partie visible du site) -->
                 
-<!-- Header -->          
-    <header>                                            
-    <!-- Le Logo -->                                 
-    <img src="images/Reservia.svg" class="logo" alt="logo reservia" /> 
-                                                     
-    <!-- Menu Liens de Navigation -->
-        <a href="#Hébergements"class="navhebergements">Hébergements</a>
-        <a href="#Activités"  class="navactivites" style="color:black">Activités</a>
+        
+    <header>                                        <!-- Header -->                                            
+        <!-- Le Logo -->                                 
+        <img src="images/Reservia.svg" class="logo" alt="logo reservia" />                                          
+        <!-- Menu Liens de Navigation -->
+        <a href="#Hebergements"class="navhebergements">Hébergements</a>
+        <a href="#marseille"  class="navactivites" style="color:black">Activités</a>
         <a href="#S'inscrire" class="navinscrire">S'inscrire</a>
-</header>                                                     
-<!-- Fermeture du Header - CLOSED  -->
+    </header>                                       <!-- Fermeture du Header-->                                                   
 
-
-
+<main>
     <!-- Section 1 Partie Recherche -->
 
-    <!-- Section 1.1 Barre de Recherche - CLOSED -->
-        <h1 class="titre">
-            Trouvez votre hébergement pour des vacances de rêve
-        </h1> <br />
-        <h4 class="soustitre">
-            En plein centre ville ou en pleine nature
-        </h4>
+        <!-- Section 1.1 Barre de Recherche - CLOSED -->
+            <h1 class="titre">
+                Trouvez votre hébergement pour des vacances de rêve
+            </h1> <br />
+            <h4 class="soustitre">
+                En plein centre ville ou en pleine nature
+            </h4>
 
-        <div class="bloc_recherche">
+            <div class="bloc_recherche">
+                    <span class="marker">
+                        <i class="fas fa-map-marker-alt fa-xs"></i>
+                    </span>  
+                    
+                    <div class="destination">
+                        <input class="inputplace" type="search" placeholder="Marseille, France" >
+                        <button class="submit" id="submit">Rechercher</button>
+                        <button class="searchFormSubmitinputIcon fas fa-search" id="searchicon"></button>
+                    </div> 
+            </div>
 
-                <div class="marker">
-                    <i class="fas fa-map-marker-alt fa-xs"></i>
-                </div>
-                
-                <div class="recherche">
-                
-                    <form method="post" action="traitement.php">        
-                        <div class="destination">
-                        <input type="search" placeholder="Marseille, France" title="rechercher"
-                        ><input type="submit" value="Rechercher">
-                        </div>
-                    </form>
-                </div> 
-        </div> <br />
-
-        <!-- Fermeture Section 1.1 Barre de Recherche - CLOSED -->
-        
+        <!-- Fermeture Section 1.1 Barre de Recherche -->
         <!-- Section 1.2 Boutons Filtres - CLOSED -->                 
             <div class="liste_filtres">
                 <form method="post" action="traitement.php">    <!-- nom action "traitement.php" est fictif A MODIFIER -->
@@ -143,7 +134,7 @@
     <div class="Resultats_Logements">
 
         <!-- BLOC 3: Résultats Hébergements -->
-        <div class="Hebergements">             <!-- id pour ancre Hébergements -->
+        <div id="Hebergements">             <!-- id pour ancre Hébergements -->
             <h3 class="headerblochebergements">Hébergements à Marseille</h3><br>
 
                 <!-- BLOC Hébergement 1 -->
@@ -363,7 +354,7 @@
 
 
 <!-- Section 3 Partie Activités -->
-<h3 class="marseille">Activités à Marseille</h3> <br />
+<h3 id="marseille">Activités à Marseille</h3> <br />
 
     <div class="blocactivites">
     
@@ -404,9 +395,9 @@
         </a>         
     </div>
 
-<!-- Fermeture Section 3 Partie Activités -->
+    <!-- Fermeture Section 3 Partie Activités -->
 
-
+</main>
  <!-- Footer -->
 <footer>                                               
     <div class="footer_site_reservia">                     <!-- Bloc Div Footer -->
