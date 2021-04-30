@@ -131,16 +131,17 @@ header a:hover{
 
 /* Bloc Filtres */ 
 .liste_filtres ul{
-    display: flex;   
+    display: flex; 
+    flex-direction: row;  
 }
-.liste_filtres .choix li{
+.liste_filtres .choix li{ /*gestion du bloc liste filtres (dots out etc*/
     display: flex;
     list-style: none;
     text-decoration: none;
     padding-right: 40px;
     align-items: center;
 }
-.filtre_select{
+.filtre_title{
     display: flex;
     font-size: 1rem;
     font-weight: bolder;
@@ -148,7 +149,7 @@ header a:hover{
     font-family: "Raleway-Bold", Arial, Verdana, sans-serif;
 }
 
-.filtre{
+.filtre{ /*label*/
     display: flex;
     align-items: center;
     border: #F2F2F2 solid 2px;
@@ -158,36 +159,26 @@ header a:hover{
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
 }
-.filtre input + label {
+.filtre input + label { /*pour avoir icon on top of label*/
     border: #DEEBFF solid 1px;
     background-color: #DEEBFF;
     display: inline-block;
     border-radius: 50%;
 }
 
-.filtre input:checked + label {
+.filtre input:checked + label, .filtre input:hover + label{
     background-color:#0065FC;
 }
 
-.filtre input:hover + label{
-    background-color:#0065FC;
-}
-
-.filtre i:hover{
+.filtre i:hover, .filtre input:checked + label i{
     color:white;   
 }
 
-.filtre input:checked + label i{
-    color:white;
-}
-.filtre input{
+.filtre input{ /*permet d'avoir check box & icon l'un sur l'autre*/
     display: none;
 }
-.choix .familial{
-    margin-left: 0px;
-}
 
-.choix .label {
+.choix .label { /*donne de l'espace au texte dans l'étiquette*/
     padding-right: 20px;
     padding-left: 6px;  
 } 
@@ -210,6 +201,15 @@ header a:hover{
     margin-left: -2px;
 }
 /* Fermeture Bloc Filtres */
+
+@media only screen and (max-width:768px){
+    .liste_filtres ul{
+        display: flex;
+        justify-content: space-between; 
+        flex-wrap: wrap;  
+    }
+
+}
 
 /* Bloc Info Disponibilités */
 .info_dispo h6{
@@ -599,4 +599,4 @@ a{
     header a:hover{
         border-top: none;
     }
-    }
+}
