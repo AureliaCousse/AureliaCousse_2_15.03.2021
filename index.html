@@ -1,30 +1,18 @@
-<!DOCTYPE html>                              <!--ceci est un document de type HTML5-->
-<html lang="fr">                                                  <!-- html -->
-  <head>                                                <!-- head -->
-    <meta charset="UTF-8">                              <!-- pour conserver l'encodage et les accents -->
-    <link rel="stylesheet" href="style.css" />          <!-- pour faire le lien avec la page css -->
-    <script src="https://kit.fontawesome.com/32e4f6682e.js" crossorigin="anonymous"></script> <!-- ce sont les kits icons Fontawesome -->
-    <title>Reservia</title>                             <!-- le titre de la page (dans Google, dans les onglets…) -->
+<!DOCTYPE html>                                                 <!--this is an HTML5 document type-->
+<html lang="en">                                                <!-- language used in this html: english -->
+  <head>                                                        <!-- head -->
+    <meta charset="UTF-8">                                      <!-- pour conserver l'encodage et les accents -->
+    <link rel="stylesheet" href="style.css" /> <!-- to be linked with its css page -->
+    <script src="https://kit.fontawesome.com/32e4f6682e.js" crossorigin="anonymous"></script> <!--these are Fontawesome icon kits -->
+    <title>Reservia</title>                                  <!-- title of this page (in Google, in tabs…) -->
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Site de réservation d'hébergements et activités pour des vacances de rêve partout en France" />
     
-    
-    <meta name="twitter:card" content="summary"/>          <!-- Twitter Card data -->
-    <meta name=”twitter:site” content="http://www.reservia.com/" />
-    <meta name=”twitter:title” content=”Reservia” />
-    <meta name=”twitter:description” content="Site de réservation d'hebergements et activités pour des vacances de rêve partout en France."  />
-    <meta name=”twitter:image” content="C:\Users\acousse\Documents\EAGLE\Projet_2\1_Documents_de_travail\Fichiers\images\Reservia.svg" />
-    
-    <meta property="og:title" content="Reservia" />     <!-- Open Graph data -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://www.reservia.com/" />
-    <meta property="og:image" content="C:\Users\acousse\Documents\EAGLE\Projet_2\1_Documents_de_travail\Fichiers\images\Reservia.svg" />
-    <meta property="og:description" content="Site de réservation d'hébergements et activités pour des vacances de rêve partout en France" />
-
-  </head>                                           <!-- fin du head-->
+  </head>                                           <!-- end of head-->
   
-<body>                                              <!-- body: la partie visible du site) -->
-                
+<body>                                              <!-- body: visible part of the web page) -->
+     
         
     <header>                                        <!-- Header -->                                            
         <!-- Le Logo -->                                 
@@ -32,17 +20,17 @@
         <!-- Menu Liens de Navigation -->
         <a href="#Hebergements" class="navhebergements">Hébergements</a>
         <a href="#marseille"  class="navactivites" style="color:black">Activités</a>
-        <a href="#S'inscrire" class="navinscrire">S'inscrire</a>
-    </header>                                       <!-- Fermeture du Header-->                                                   
+        <a href="#S'inscrire" class="navinscrire"><strong>S'inscrire</strong></a>
+    </header>                                       <!-- end of Header-->                                                   
 
 <main>
-    <!-- Section 1 Partie Recherche -->
+    <!-- Section 1 Search part -->
 
-        <!-- Section 1.1 Barre de Recherche - CLOSED -->
-            <h1 class="titre">
+        <!-- Barre de Recherche-->
+            <h1 class="title">
                 Trouvez votre hébergement pour des vacances de rêve
             </h1> <br />
-            <h4 class="soustitre">
+            <h4 class="subtitle">
                 En plein centre ville ou en pleine nature
             </h4>
 
@@ -51,20 +39,18 @@
                         <i class="fas fa-map-marker-alt fa-xs"></i>
                     </span>  
                     
-                    <div class="destination">
-                        <input class="inputplace" type="search" placeholder="Marseille, France" >
-                        <button class="submit" id="submit">Rechercher</button>
-                        <button class="searchFormSubmitinputIcon fas fa-search" id="searchicon"></button>
-                    </div> 
+                    <input class="inputplace" type="search" placeholder="Marseille, France" >
+                    <button class="submit" id="submit">Rechercher</button>
+                    <button class="searchFormSubmitinputIcon fas fa-search" id="searchicon"></button>
             </div>
 
         <!-- Fermeture Section 1.1 Barre de Recherche -->
-        <!-- Section 1.2 Boutons Filtres - CLOSED -->                 
+        <!-- Section 1.2 Boutons Filtres-->                 
             <div class="liste_filtres">
                 <form method="post" action="traitement.php">    <!-- nom action "traitement.php" est fictif A MODIFIER -->
                     <ul class="choix">
 
-                        <li class="filtre_select">
+                        <li class="filtre_title">
                             <h4>Filtres</h4>
                         </li>
 
@@ -120,29 +106,33 @@
             </div> 
 <!-- Fermeture Section 1.2 Boutons Filtres - CLOSED -->
         
-<!-- Section 1.3 Info Disponibilités - CLOSED -->
+<!-- Info Disponibilités-->
     <div class="info_dispo">
         <h6><i class="fas fa-info fa-xs"></i>Plus de 500 logements sont disponibles dans cette ville.</h6>
     </div>
-<!-- Fermeture Section 1.3 Info Disponibilités - CLOSED  -->
+<!-- Fermeture Info Disponibilités-->
 
 
-<!-- BLOC 1 Partie Résultats -->
-<section class="allresults">       
+<!-- Partie Résultats: Hébergements + Populaires + Activités-->
+<section>       
     
-    <!-- BLOC 2: Résultats Logements : Hébergements + Populaires -->
-    <div class="Resultats_Logements">
+    <!--Résultats Logements : Bloc Hébergements + Bloc Populaires -->
+    <div class="resultatslogements">
 
         <!-- BLOC 3: Résultats Hébergements -->
-        <div id="Hebergements">             <!-- id pour ancre Hébergements -->
-            <h3 class="headerblochebergements">Hébergements à Marseille</h3><br>
+        <div class="resultatshebergements">
+     
+            <div>       
+                <h3 class="headerblochebergements">Hébergements à Marseille</h3><br>
+            </div>
 
+            <div id="hebergements">  <!-- id pour ancre Hébergements -->
+                
                 <!-- BLOC Hébergement 1 -->
                 <a href="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="BlocHebergement">
                     <!-- BLOC Hébergement 1 - photo -->
-                    
                     <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"  class="photoH" alt="Photo logement">
-                    
+    
                     <!-- BLOC Hébergement 1 - Text -->
                     <div>
                         <p class="Htext1">Auberge la Cannebière</p>
@@ -263,89 +253,96 @@
                         <i class="fas fa-star blue"></i>
                         <i class="fas fa-star blue"></i>
                     </div> 
-                </a><br />
-    
-            <h5 class="footerblochebergements">Afficher plus</h5>                
-                        
-        </div>  <!-- Fermeture BLOC 3: Résultats Hébergements -->      
-    
-        <!-- BLOC 4: Résultats Populaires -->
-        <div class="populaires">             
-            <p class="headerblocpopulaires">Les plus populaires<i class="fas fa-chart-line"></i></p><br />
-
-            <!-- BLOC Populaire 1 -->
-            <a href="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" class="BlocPopulaire">
-                
-                <!-- BLOC Populaire 1 - photo -->
-                <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"  class="photoP" alt="Photo logement">
-                
-                <!-- BLOC Populaire 1 - Text -->
-                <div class="cartepopulaire">  <!-- div créée pour gestion de la width à 50% -->
-                    <div>
-                    <p class="Htext1">Hôtel Le soleil du matin</p>
-                    <p class="Htext2">Nuit à partir de 128<strong>€</strong></p>
-                </div>
-                
-                <!-- BLOC Populaire 1 - star rating -->
-                <div class="starratingP">
-                    <i class="fas fa-star blue"></i>
-                    <i class="fas fa-star blue"></i>
-                    <i class="fas fa-star blue"></i>
-                    <i class="fas fa-star blue"></i>
-                    <i class="fas fa-star blue"></i>
-                
-                </div>
-            </div> 
-            </a>
-
-            <!-- BLOC Populaire 2 -->
-            <a href="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" class="BlocPopulaire">
-                
-                <!-- BLOC Populaire 2 - photo -->
-                <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"  class="photoP" alt="Photo logement">
-                
-                <!-- BLOC Populaire 2 - Text -->
-                <div class="cartepopulaire">  <!-- div créée pour gestion de la width à 50% -->
-                <div>
-                    <p class="Htext1">Au coeur de l'eau Chambre d'hôtes</p>
-                    <p class="Htext2">Nuit à partir de 71<strong>€</strong></p>
-                </div>
-                
-                <!-- BLOC Populaire 2 - star rating -->
-                <div class="starratingP">
-                    <i class="fas fa-star blue"></i>
-                    <i class="fas fa-star blue"></i>
-                    <i class="fas fa-star blue"></i>
-                    <i class="fas fa-star blue"></i>
-                    <i class="fas fa-star grey"></i>
-                </div> 
+                </a>
             </div>
-            </a>
 
-            <!-- BLOC Populaire 3 -->
-            <a href="images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" class="BlocPopulaire">
-                
-                <!-- BLOC Populaire 3 - photo -->
-                <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"  class="photoP" alt="Photo logement">
-                
-                <!-- BLOC Populaire 3 - Text -->
-                <div class="cartepopulaire">  <!-- div créée pour gestion de la width à 50% -->
-                <div>
-                    <p class="Htext1">Hôtel Tout bleu et Blanc</p>
-                    <p class="Htext2">Nuit à partir de 68<strong>€</strong></p>
-                </div>
-                
-                <!-- BLOC Populaire 3 - star rating -->
-                <div class="starratingP">
-                    <i class="fas fa-star blue"></i>
-                    <i class="fas fa-star blue"></i>
-                    <i class="fas fa-star blue"></i>
-                    <i class="fas fa-star blue"></i>
-                    <i class="fas fa-star grey"></i>
-                </div>
-                </div> 
-            </a>
+            <div>
+                <h5 class="footerblochebergements">Afficher plus</h5>                
+            </div>
+        </div>            
+        <!-- Fermeture BLOC Résultats Hébergements -->      
+    
+        <!-- BLOC Résultats Populaires -->
+        <div class="populaires">
 
+            <div class="headerblocpopulaires">
+                <h3>Les plus populaires</h3>
+                <i class="fas fa-chart-line"></i>
+            </div>
+
+            <div>
+                <!-- BLOC Populaire 1 -->
+                <a href="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" class="BlocPopulaire">
+                    
+                    <!-- BLOC Populaire 1 - photo -->
+                    <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"  class="photoP" alt="Photo logement">
+                    
+                    <!-- BLOC Populaire 1 - Text -->
+                    <div class="cartepopulaire">  <!-- div créée pour gestion de la width à 50% -->
+                        <div>
+                            <p class="Ptext1">Hôtel Le soleil du matin</p>
+                            <p class="Ptext2">Nuit à partir de 128<strong>€</strong></p>
+                        </div>
+                    
+                        <!-- BLOC Populaire 1 - star rating -->
+                        <div class="starratingP">
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                        </div>
+                    </div> 
+                </a>
+
+                <!-- BLOC Populaire 2 -->
+                <a href="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" class="BlocPopulaire">
+                    
+                    <!-- BLOC Populaire 2 - photo -->
+                    <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"  class="photoP" alt="Photo logement">
+                    
+                    <!-- BLOC Populaire 2 - Text -->
+                    <div class="cartepopulaire">  <!-- div créée pour gestion de la width à 50% -->
+                        <div>
+                            <p class="Ptext1">Au coeur de l'eau Chambre d'hôtes</p>
+                            <p class="Ptext2">Nuit à partir de 71<strong>€</strong></p>
+                        </div>
+                    
+                        <!-- BLOC Populaire 2 - star rating -->
+                        <div class="starratingP">
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star grey"></i>
+                        </div> 
+                    </div>
+                </a>
+
+                <!-- BLOC Populaire 3 -->
+                <a href="images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" class="BlocPopulaire">
+                    
+                    <!-- BLOC Populaire 3 - photo -->
+                    <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"  class="photoP" alt="Photo logement">
+                    
+                    <!-- BLOC Populaire 3 - Text -->
+                    <div class="cartepopulaire">  <!-- div créée pour gestion de la width à 50% -->
+                        <div>
+                            <p class="Ptext1">Hôtel Tout bleu et Blanc</p>
+                            <p class="Ptext2">Nuit à partir de 68<strong>€</strong></p>
+                        </div>
+                    
+                        <!-- BLOC Populaire 3 - star rating -->
+                        <div class="starratingP">
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star grey"></i>
+                        </div>
+                    </div> 
+                </a>
+            </div>
         </div>
         <!-- Fermeture BLOC 4: Résultats Populaires -->  
        
@@ -395,7 +392,7 @@
         </a>         
     </div>
 
-    <!-- Fermeture Section 3 Partie Activités -->
+    <!-- Fermeture Section Partie Activités -->
 
 </main>
  <!-- Footer -->
