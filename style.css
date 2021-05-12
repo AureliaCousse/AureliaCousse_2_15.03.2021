@@ -46,10 +46,12 @@ body{
     margin-right: auto; /* permet de faire passer la marge droite du logo au max et donc pousser la nav tout à droite de la page */
     width: 120px;
 }
+
 header{
     display: flex;
     align-items: center;
 }
+
 header a{
     margin-right: 20px;
     text-decoration: none;
@@ -57,9 +59,11 @@ header a{
     color:#0065FC;
     font-size: 1.2rem;
 }
+
 .black{
     color: black
 }
+
 header a:hover{
     border-top: 2.5px solid #0065FC;
     font-weight: bold;
@@ -255,6 +259,7 @@ header a:hover{
     display: flex;
     align-items: stretch; /*pour avoir les 2 blocs Héberg et pop à la même hauteur  */   
     flex-wrap: wrap-reverse;
+    justify-content: space-between;
 }
 
 .resultatslogements a{    /*valid for all H & P cards*/
@@ -291,8 +296,8 @@ header a:hover{
 /* BLOC Hébergements de H1 à H6*/
 .BlocHebergement{
     background-color: white;
-    width: 335px;
-    height: 270px;
+    width: 30%;
+    height: 260px;
     border-radius: 20px;
     margin: auto;
     display: flex;
@@ -475,7 +480,6 @@ header a:hover{
     width:auto;
     object-fit: cover;
     overflow: hidden;
-
 }
 
 .A3 img{
@@ -483,7 +487,6 @@ header a:hover{
     width:auto;
     object-fit: cover;
     overflow: hidden;
-
 }
 
 .A4 img{
@@ -491,22 +494,22 @@ header a:hover{
     width:auto;
     object-fit: cover;
     overflow: hidden;
-
 }
+
 .A5 img{
     height: 70%;
     width:auto;
     object-fit: cover;
     overflow: hidden;
-    
 }
+
 .A6 img{
     height: 70%;
     width:auto;
     object-fit: cover;
     overflow: hidden;
-
 }
+
 /* Cartes Activité A1 à A6 */
 
 .A1{
@@ -549,8 +552,7 @@ header a:hover{
 
 /* Footer */
 footer{
-    margin-right: -100px;
-    margin-left: -50px;
+    margin-right: -20px;    
 }
 
 .footer_site_reservia{ /*titres menu*/
@@ -583,7 +585,7 @@ a{
 .A_propos{
     width: 33.33%;
     margin-top: 15px;
-    margin-left: 50px;
+    margin-left: 20px;
 }
 .A_propos h5{
     font-weight: bold;
@@ -700,6 +702,7 @@ a{
        object-fit: cover;
        overflow: hidden;
    }
+
    /* Cartes Activité A1 à A6 */
    
    .A1{
@@ -739,7 +742,6 @@ a{
 
 @media only screen and (max-width:950px){ 
     
-    
     #populaires{ /*P cards from row to column*/
         display:flex;
         flex-direction: column;
@@ -751,6 +753,7 @@ a{
     }
       
     .resultatshebergements{
+        background-color: transparent;
         width: 100%;
         display:flex;
         flex-direction: column;
@@ -778,7 +781,6 @@ a{
     header{
         display: flex;
         flex-wrap: wrap;
-        width:100%;
     }
 
     header a{
@@ -795,6 +797,18 @@ a{
 
     .logo{
         order: -2;
+    }
+
+    .navhebergements{
+        width:50%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .navactivites{
+        width: 50%;
+        display: flex;
+        justify-content: center;
     }
 
 /*Navigation Bar*/
@@ -838,7 +852,7 @@ a{
 /* Activités */
  .blocactivites{
     display: grid;
-    grid-template-columns: 435px;
+    grid-template-columns: 97%;
     grid-template-rows: repeat(6, 300px);
     grid-gap: 40px;  
 }
