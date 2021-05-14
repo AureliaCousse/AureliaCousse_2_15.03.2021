@@ -453,7 +453,7 @@ header a:hover{
     display: grid;
     grid-template-columns: repeat(4, 23%);
     grid-template-rows: repeat(10, 28px);
-    grid-gap: 40px;
+    grid-gap: 50px;
     margin-left: 20px;
 }
 
@@ -551,9 +551,6 @@ header a:hover{
 /* Fermeture BLOC 5 - Activités */
 
 /* Footer */
-footer{
-    margin-right: -20px;    
-}
 
 .footer_site_reservia{ /*titres menu*/
     display: flex;
@@ -941,19 +938,19 @@ a{
 }
 
 .A_propos{
-    width: 100%;
+    width: inherit;
     margin-top: 15px;
     margin-left: 50px;
 }
 
 .Nos_hébergements{
-    width: 100%;
+    width: inherit;
     margin-top: 15px;
     margin-left: 50px;
 }
 
 .Assistance{
-    width: 100%;
+    width: inherit;
     margin-top: 15px;
     margin-left: 50px;
 }
