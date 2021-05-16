@@ -453,7 +453,7 @@ header a:hover{
     display: grid;
     grid-template-columns: repeat(4, 23%);
     grid-template-rows: repeat(10, 28px);
-    grid-gap: 50px;
+    grid-gap: 40px;
     margin-left: 20px;
 }
 
