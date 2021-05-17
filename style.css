@@ -32,7 +32,7 @@
     src: url("polices/Raleway-Bold.ttf") format("truetype");                                                               /* police fournie en .ttf only */
 }
 
-/* Ci-dessous les caractéristiques communes à toute la page web */ 
+/*Ci-dessous les caractéristiques communes à toute la page web*/ 
 body{
     font-family: "Raleway-Regular", Arial, Verdana, sans-serif; /* utilisation des polices sur la totalité de la page */
     font-size: 100%; /* nota bene 100% = 16px  - Ailleurs mettre combien de rem - par ex au lieu de 32px mettre 2rem */
